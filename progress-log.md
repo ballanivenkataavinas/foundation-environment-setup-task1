@@ -1,3 +1,15 @@
+Day 1 – Lab Environment Set
+-- Installed and verified VMware Workstation as the virtualization platform for creating the cybersecurity lab environment.
+-- Set up Kali Linux as the attacker machine. Ensured the system is running properly and ready for performing security testing and analysis.
+-- Installed Metasploitable2 as the target machine. This vulnerable machine will be used to practice penetration testing techniques in a safe and controlled environment.
+-- Understood the purpose of using vulnerable machines like Metasploitable2 and DVWA for ethical hacking practice.
+-- Configured a private network using Host-Only Adapter to ensure isolated communication between attacker (Kali Linux) and target (Metasploitable2).
+-- Verified network connectivity between machines using basic commands like ping to confirm successful lab setup.
+-- Gained understanding of how isolated lab environments help in safe cybersecurity experimentation without affecting external systems.
+-- Successfully completed initial lab setup required for further cybersecurity tasks.
+ Outcome:  A fully functional virtual lab environment with attacker and target machines ready for testing.
+
+ 
 Day 2 – Cybersecurity Basics
 
 -- Studied the CIA Triad, which is the core foundation of cybersecurity:
