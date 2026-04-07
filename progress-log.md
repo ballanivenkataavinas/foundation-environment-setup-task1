@@ -1,4 +1,4 @@
-Day 1 – Lab Environment Set
+# Day 1 – Lab Environment Set
 -- Installed and verified VMware Workstation as the virtualization platform for creating the cybersecurity lab environment.
 
 -- Set up Kali Linux as the attacker machine. Ensured the system is running properly and ready for performing security testing and analysis.
@@ -17,7 +17,7 @@ Day 1 – Lab Environment Set
 
  Outcome:  A fully functional virtual lab environment with attacker and target machines ready for testing.
 
-Day 2 – Cybersecurity Basics
+# Day 2 – Cybersecurity Basics
 
 -- Studied the CIA Triad, which is the core foundation of cybersecurity:
 
@@ -68,7 +68,7 @@ Day 2 – Cybersecurity Basics
    -- Avoiding suspicious links and emails
    -- Implementing proper security policies and awareness
 
-Day 3 – Linux Fundamentals & Essential Commands
+# Day 3 – Linux Fundamentals & Essential Commands
 
 -- Gained hands-on understanding of Linux, which is widely used in cybersecurity for penetration testing, server management, and automation  
 
@@ -115,7 +115,7 @@ Day 3 – Linux Fundamentals & Essential Commands
    -- Better control over system and processes  
 -- Practiced commands in Kali Linux terminal to build familiarity  
 
- Day 4 – Network Scanning with Nmap (Reconnaissance Phase)
+# Day 4 – Network Scanning with Nmap (Reconnaissance Phase)
 
 -- Learned about the importance of Reconnaissance (information gathering) in cybersecurity  
    -- First step in ethical hacking before any attack  
@@ -125,9 +125,6 @@ Day 3 – Linux Fundamentals & Essential Commands
    -- IP Address → Identifies devices on network  
    -- Ports → Entry points for services (e.g., 80 = HTTP, 22 = SSH)  
    -- Protocols → Rules for communication (TCP/UDP)  
-
--- Explored and used **:contentReference[oaicite:0]{index=0}** (Network Mapper):
-   -- A powerful tool used to scan networks and discover hosts/services  
 
 -- Performed practical scanning on Metasploitable2 from Kali Linux:
 
@@ -171,4 +168,82 @@ Common Ports Observed
    -- Identify weak services  
    -- Plan attacks  
 --- Performed scans only in controlled lab environment (ethical practice)  
+
+
+# Day 5 – Network Traffic Analysis using Wireshark
+
+-- Learned about packet analysis and its importance in cybersecurity  
+   -- Helps monitor, capture, and analyze network traffic  
+   -- Used in detecting attacks, troubleshooting, and forensic investigations  
+
+Understanding Packets
+-- A packet is a small unit of data transmitted over a network  
+-- Each packet contains:
+   -- Source IP  
+   -- Destination IP  
+   -- Protocol (TCP, UDP, ICMP)  
+   -- Payload (actual data)  
+
+Practical Activity – Packet Capture
+
+-- Opened Wireshark in Kali Linux  
+-- Selected active network interface (eth0)  
+-- Started live packet capture  
+
+-- Generated traffic using:
+   ping 192.168.x.x  
+
+-- Observed ICMP packets in Wireshark  
+
+Filtering Packets
+
+-- Used filters to analyze specific traffic:
+
+   -- ICMP traffic:
+      icmp  
+
+   -- HTTP traffic:
+      http  
+
+   -- DNS queries:
+      dns  
+
+   -- TCP traffic:
+      tcp  
+
+Packet Analysis
+
+-- Clicked on individual packets to inspect details:
+   -- Frame layer (basic info)  
+   -- IP layer (source & destination)  
+   -- Protocol layer (TCP/ICMP details)  
+
+-- Observed:
+   -- Request and reply packets in ping  
+   -- Time delay between packets  
+   -- Packet size and structure  
+
+ Security Insights
+
+-- Learned how attackers and defenders use packet analysis:
+
+   -- Detect suspicious traffic  
+   -- Identify malware communication  
+   -- Analyze data leaks  
+   -- Monitor unusual patterns  
+
+
+Real-World Importance
+
+-- Wireshark is widely used in:
+   -- Security Operations Centers (SOC)  
+   -- Incident response  
+   -- Network troubleshooting  
+
+
+Key Takeaways
+
+-- Packet analysis gives deep visibility into network communication  
+-- Filters help in focusing on relevant traffic  
+-- Wireshark is essential for both offensive and defensive security  
 
