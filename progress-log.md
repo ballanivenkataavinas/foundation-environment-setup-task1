@@ -1,4 +1,4 @@
-# Day 1 – Lab Environment Set
+# Day 1 -- Lab Environment Set
 
 -- Installed and verified VMware Workstation as the virtualization platform for creating the cybersecurity lab environment.
 
@@ -19,7 +19,7 @@
  Outcome:  A fully functional virtual lab environment with attacker and target machines ready for testing.
 
 
-# Day 2 – Cybersecurity Basics
+# Day 2 -- Cybersecurity Basics
 
 -- Studied the CIA Triad, which is the core foundation of cybersecurity:
 
@@ -71,7 +71,7 @@
    -- Implementing proper security policies and awareness
    
 
-# Day 3 – Linux Fundamentals & Essential Commands
+# Day 3 -- Linux Fundamentals & Essential Commands
 
 -- Gained hands-on understanding of Linux, which is widely used in cybersecurity for penetration testing, server management, and automation  
 
@@ -119,7 +119,7 @@
 -- Practiced commands in Kali Linux terminal to build familiarity  
 
 
-# Day 4 – Network Scanning with Nmap (Reconnaissance Phase)
+# Day 4 -- Network Scanning with Nmap (Reconnaissance Phase)
 
 -- Learned about the importance of Reconnaissance (information gathering) in cybersecurity  
    -- First step in ethical hacking before any attack  
@@ -174,7 +174,7 @@ Common Ports Observed
 --- Performed scans only in controlled lab environment (ethical practice)  
 
 
-# Day 5 – Network Traffic Analysis using Wireshark
+# Day 5 -- Network Traffic Analysis using Wireshark
 
 -- Learned about packet analysis and its importance in cybersecurity  
    -- Helps monitor, capture, and analyze network traffic  
@@ -245,7 +245,7 @@ Real-World Importance
    -- Network troubleshooting  
 
 
-# Day 6 – Web Application Testing using Burp Suite
+# Day 6 -- Web Application Testing using Burp Suite
 
 -- Learned about Web Application Security and why websites are common attack targets  
    -- Most applications run on web (login forms, APIs, dashboards)  
