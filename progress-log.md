@@ -1,4 +1,5 @@
 # Day 1 – Lab Environment Set
+
 -- Installed and verified VMware Workstation as the virtualization platform for creating the cybersecurity lab environment.
 
 -- Set up Kali Linux as the attacker machine. Ensured the system is running properly and ready for performing security testing and analysis.
@@ -16,6 +17,7 @@
 -- Successfully completed initial lab setup required for further cybersecurity tasks.
 
  Outcome:  A fully functional virtual lab environment with attacker and target machines ready for testing.
+
 
 # Day 2 – Cybersecurity Basics
 
@@ -67,6 +69,7 @@
    -- Keeping software and systems updated
    -- Avoiding suspicious links and emails
    -- Implementing proper security policies and awareness
+   
 
 # Day 3 – Linux Fundamentals & Essential Commands
 
@@ -114,6 +117,7 @@
    -- Faster command-line operations compared to GUI  
    -- Better control over system and processes  
 -- Practiced commands in Kali Linux terminal to build familiarity  
+
 
 # Day 4 – Network Scanning with Nmap (Reconnaissance Phase)
 
@@ -241,9 +245,73 @@ Real-World Importance
    -- Network troubleshooting  
 
 
-Key Takeaways
+# Day 6 – Web Application Testing using Burp Suite
 
--- Packet analysis gives deep visibility into network communication  
--- Filters help in focusing on relevant traffic  
--- Wireshark is essential for both offensive and defensive security  
+-- Learned about Web Application Security and why websites are common attack targets  
+   -- Most applications run on web (login forms, APIs, dashboards)  
+   -- Attackers target input fields, authentication, and data handling  
 
+Understanding How Web Works
+-- Client (Browser) → sends request → Server  
+-- Server → sends response → Client  
+
+-- Example:
+   -- Request: Login form submission  
+   -- Response: Success / Failure message  
+
+Practical Setup
+
+-- Opened Burp Suite in Kali Linux  
+-- Launched embedded browser from Burp  
+
+-- Target used:
+   http://192.168.x.x   (Metasploitable2 web server)
+
+Intercepting Requests
+
+-- Enabled Intercept in Burp Suite  
+-- Visited the target website  
+
+-- Observed HTTP request:
+   -- GET /index.php  
+   -- Headers (Host, User-Agent, etc.)  
+
+-- Turned Intercept OFF to forward request  
+
+Testing Login Form (DVWA)
+
+-- Entered dummy credentials in login form  
+
+-- Captured POST request:
+   -- Username and password visible in request body  
+
+Example:
+   username=admin&password=1234  
+
+ Understanding Vulnerabilities
+
+-- Learned how attackers manipulate requests:
+
+   -- Change parameters (e.g., username=admin)  
+   -- Modify values before sending  
+   -- Bypass authentication  
+
+Key Concepts Learned
+
+-- HTTP Methods:
+   -- GET → fetch data  
+   -- POST → send data  
+
+-- Parameters:
+   -- Data sent in request (form inputs)  
+
+-- Headers:
+   -- Additional information about request 
+   
+Security Insights
+-- Sensitive data can be exposed if not encrypted (HTTP risk)  
+-- Weak input validation leads to attacks like:
+   -- SQL Injection  
+   -- Authentication bypass  
+-- Intercepting requests helps identify vulnerabilities  
+ 
